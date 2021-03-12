@@ -6,7 +6,7 @@
 
 stdenv.mkDerivation {
   pname = "heaan";
-  version = "git-2020-12-08";
+  version = "2020-12-08";
 
   src = fetchFromGitHub {
     owner = "snucrypto";
