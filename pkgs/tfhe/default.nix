@@ -11,7 +11,7 @@
 
 stdenv.mkDerivation {
   pname = "tfhe";
-  version = "git-2020-04-14";
+  version = "2020-04-14";
 
   src = fetchFromGitHub {
     owner = "tfhe";
