@@ -7,13 +7,13 @@
 
 stdenv.mkDerivation {
   pname = "tfhepp";
-  version = "git-2021-02-22";
+  version = "2021-03-12";
 
   src = fetchFromGitHub {
     owner = "virtualsecureplatform";
     repo = "TFHEpp";
-    rev = "ac85933131c3ff9302947ba75c138226f4de667a";
-    sha256 = "05q635c33fl1b0qcnx3svwlc1d9mr06drs0frhyzipvl1zg132nd";
+    rev = "efd19351a43f479b5b714ade73ac1dfc9e3d3e7d";
+    sha256 = "0rxjlsxs0n6xnyg2jlm60a2hrslrd8wg29dhpxcc2zwd3icj8vjv";
   };
 
   patches = [
