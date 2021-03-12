@@ -13,5 +13,7 @@ jobs:
     - uses: cachix/cachix-action@v8
       with:
         name: nixpkgs-he
+        skipPush: true
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
     - run: nix-build release.nix -A buildPkgs
+    - run: nix-build release.nix -A cachePkgs | cachix push nixpkgs-he
