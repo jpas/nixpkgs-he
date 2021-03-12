@@ -8,7 +8,7 @@
 
 stdenv.mkDerivation rec {
   pname = "hare";
-  version = "git-2019-04-29";
+  version = "2019-04-29";
 
   src = fetchFromGitLab {
     owner = "fvhpr";
