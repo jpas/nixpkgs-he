@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 17484c1..9e53852 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -374,8 +374,6 @@ set(THREADS_PREFER_PTHREAD_FLAG ON)
+ #--------------------------------------------------------------------
+ # Documentation logic
+ #--------------------------------------------------------------------
+-find_package (Git REQUIRED)
+-
+ find_package (Doxygen QUIET COMPONENTS dot)
+ if (DOXYGEN_FOUND)
+ 
