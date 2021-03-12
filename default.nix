@@ -10,10 +10,10 @@ let
         callPackage
         ;
 
-      # NOTE(jpas), We don't need a derivation for concrete since rust typically
+      # NOTE(jpas): We don't need a derivation for concrete since rust typically
       # uses cargo to ensure reproducibility. Thus we only need this if we want to
-      # use any of their binaries. It also serves to tell us system dependencies
-      # for the libraries they use.
+      # use any of their binaries. It mostly serves as a place to document what
+      # is needed to build it.
       concrete = callPackage ./pkgs/concrete { };
 
       hare = callPackage ./pkgs/hare { };

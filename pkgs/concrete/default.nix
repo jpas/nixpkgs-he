@@ -34,5 +34,6 @@ rustPlatform.buildRustPackage rec {
       "A fully homomorphic encryption library implementing Zama's variant of TFHE";
     inherit (src) homepage;
     license = licenses.agpl3;
+    broken = true;
   };
 }
