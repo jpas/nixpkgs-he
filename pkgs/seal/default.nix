@@ -20,6 +20,10 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [ cmake gtest ];
   propagatedBuildInputs = [ zlib ];
 
+  patches = [
+    ./0000-install-to-expected-includes-and-config-directories.patch
+  ];
+
   cmakeFlags = [
     "-DSEAL_BUILD_DEPS=OFF"
     "-DSEAL_USE_MSGSL=OFF"
